@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-page {
+  background-color: #090D28;
+  min-height: 100vh;
+}
+
+.card-gym {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-gym .title {
+  position: absolute;
+  background-color: rgba(75, 78, 104, 0.75);
+  top: 50%;
+  right: -100%;
+  transform: translateY(-50%);
+  backdrop-filter: blur(8px);
+  transition: .5s ease;
+}
+
+.card-gym:hover .title {
+  right: 50%;
+  transform: translate(50%, -50%);
+
+}
